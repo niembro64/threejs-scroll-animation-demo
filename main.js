@@ -6,7 +6,12 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 const scene = new THREE.Scene();
 
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(
+  75,
+  window.innerWidth / window.innerHeight,
+  0.1,
+  1000
+);
 
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
@@ -37,9 +42,9 @@ scene.add(pointLight, ambientLight);
 
 // Helpers
 
-// const lightHelper = new THREE.PointLightHelper(pointLight)
-// const gridHelper = new THREE.GridHelper(200, 50);
-// scene.add(lightHelper, gridHelper)
+const lightHelper = new THREE.PointLightHelper(pointLight);
+const gridHelper = new THREE.GridHelper(200, 50, 33);
+scene.add(lightHelper, gridHelper);
 
 // const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -65,9 +70,12 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('jeff.png');
+const jeffTexture = new THREE.TextureLoader().load('cwsd.svg');
 
-const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
+const jeff = new THREE.Mesh(
+  new THREE.BoxGeometry(3, 3, 3),
+  new THREE.MeshBasicMaterial({ map: jeffTexture })
+);
 
 scene.add(jeff);
 
@@ -81,6 +89,7 @@ const moon = new THREE.Mesh(
   new THREE.MeshStandardMaterial({
     map: moonTexture,
     normalMap: normalTexture,
+    normalScale: { x: 1, y: 100 },
   })
 );
 
@@ -100,9 +109,6 @@ function moveCamera() {
   moon.rotation.y += 0.075;
   moon.rotation.z += 0.05;
 
-  jeff.rotation.y += 0.01;
-  jeff.rotation.z += 0.01;
-
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
   camera.rotation.y = t * -0.0002;
@@ -119,6 +125,10 @@ function animate() {
   torus.rotation.x += 0.01;
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01;
+
+  jeff.rotation.x += 0.0051;
+  jeff.rotation.y += 0.0031;
+  jeff.rotation.z += 0.01;
 
   moon.rotation.x += 0.005;
 

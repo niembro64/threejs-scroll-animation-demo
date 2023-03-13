@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="359px" height="360px" viewBox="0 0 359 360" enable-background="new 0 0 359 360" xml:space="preserve">
+<g id="Page-1_1_">
+	<g id="venturetec_V">
+		<g id="Page-1">
+			<g id="Group-3" transform="translate(0.000000, 0.889000)">
+				<g id="Clip-2">
+				</g>
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0.112" width="358.889" height="358.888">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				<mask maskUnits="userSpaceOnUse" x="0" y="0.112" width="358.889" height="358.888" id="mask-2">
+					<g filter="url(#Adobe_OpacityMaskFilter)">
+						<polygon id="path-1" fill="#FFFFFF" points="0,0.112 358.889,0.112 358.889,359 0,359 						"/>
+					</g>
+				</mask>
+				<path id="Fill-1" mask="url(#mask-2)" fill="#4E9DDD" d="M358.889,179.555c0,99.104-80.34,179.444-179.444,179.444
+					S0,278.66,0,179.555S80.341,0.112,179.445,0.112S358.889,80.451,358.889,179.555"/>
+			</g>
+			<polyline fill="#FFFFFF" points="169.521,141.493 213.228,141.493 179.57,213.935 128.72,104.493 88.97,104.493 178.536,294.492 
+				180.603,294.492 270.427,104.493 152.332,104.493 			"/>
+		</g>
+	</g>
+</g>
+</svg>
